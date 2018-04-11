@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in *.xml
+do
+fop -q -r -xml "$i" -xsl fristcut.xsl -pdf ./to/"$i.pdf";
+done
